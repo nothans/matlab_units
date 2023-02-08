@@ -193,3 +193,57 @@ plot(x, y)
 saveas(gcf, 'sine_plot.png')
 </code>
 </pre>
+<h1>Unit 4: MATLAB and Geosciences</h1>
+<h2>Context</h2>
+<p>In this unit, students will learn how MATLAB can be used in geoscience. Geoscience is the study of the Earth and its processes, including the study of rocks, minerals, and geologic processes. MATLAB can be a powerful tool for analyzing and visualizing data in geoscience.</p>
+<p>This unit will cover the following topics:</p>
+<ul>
+  <li>Importing and processing geoscience data</li>
+  <li>Creating visualizations of geoscience data</li>
+  <li>Analyzing geoscience data</li>
+</ul>
+<h2>Specific Code Examples</h2>
+<h3>1. Importing and Processing Geoscience Data:</h3>
+<ul>
+  <li>Explain how to import geoscience data into MATLAB, such as CSV or text files.</li>
+  <li>Demonstrate how to process geoscience data using MATLAB functions such as mean(), median(), and other statistical functions.</li>
+  <li>Provide code examples of importing and processing geoscience data:</li>
+</ul>
+<pre>
+<code>
+data = importdata('geoscience_data.csv');
+mean_value = mean(data);
+median_value = median(data);
+</code>
+</pre>
+<h3>2. Creating Visualizations of Geoscience Data:</h3>
+<ul>
+  <li>Explain how to create visualizations of geoscience data in MATLAB.</li>
+  <li>Demonstrate how to create 2D and 3D plots of geoscience data using MATLAB functions such as plot(), scatter(), and plot3().</li>
+  <li>Provide code examples of creating visualizations of geoscience data:</li>
+</ul>
+<pre>
+<code>
+x = data(:,1);
+y = data(:,2);
+scatter(x, y)
+xlabel('X-axis')
+ylabel('Y-axis')
+</code>
+</pre>
+<h3>3. Analyzing Geoscience Data:</h3>
+<ul>
+  <li>Explain how to analyze geoscience data in MATLAB.</li>
+  <li>Demonstrate how to perform statistical analysis on geoscience data using MATLAB functions such as fit(), and other statistical analysis functions.</li>
+  <li>Provide code examples of analyzing geoscience data:</li>
+</ul>
+<pre>
+<code>
+x = data(:,1);
+y = data(:,2);
+fit_result = fit(x, y, 'poly1');
+plot(fit_result, x, y)
+xlabel('X-axis')
+ylabel('Y-axis')
+</code>
+</pre>
