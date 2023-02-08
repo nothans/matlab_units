@@ -126,3 +126,70 @@ clear
 load('b.mat')
 </code>
 </pre>
+<h1>Unit 3: Plotting and Visualization</h1>
+<h2>Context</h2>
+<p>In this unit, students will learn about plotting and visualization in MATLAB. This unit will cover the following topics:</p>
+<ul>
+  <li>2D plotting</li>
+  <li>3D plotting</li>
+  <li>Customizing plots</li>
+  <li>Saving plots</li>
+</ul>
+<h2>Specific Code Examples</h2>
+<h3>1. 2D Plotting:</h3>
+<ul>
+  <li>Explain what 2D plotting is and why it is important in MATLAB.</li>
+  <li>Demonstrate how to create 2D plots using MATLAB functions such as plot().</li>
+  <li>Provide code examples of 2D plotting:</li>
+</ul>
+<pre>
+<code>
+x = -5:0.1:5;
+y = sin(x);
+plot(x, y)
+</code>
+</pre>
+<h3>2. 3D Plotting:</h3>
+<ul>
+  <li>Explain what 3D plotting is and why it is important in MATLAB.</li>
+  <li>Demonstrate how to create 3D plots using MATLAB functions such as plot3().</li>
+  <li>Provide code examples of 3D plotting:</li>
+</ul>
+<pre>
+<code>
+x = -5:0.1:5;
+y = x;
+z = x.^2 + y.^2;
+plot3(x, y, z)
+</code>
+</pre>
+<h3>3. Customizing Plots:</h3>
+<ul>
+  <li>Explain what customizing plots is and why it is important in MATLAB.</li>
+  <li>Demonstrate how to customize plots using MATLAB functions such as title(), xlabel(), ylabel(), and other customization options.</li>
+  <li>Provide code examples of customizing plots:</li>
+</ul>
+<pre>
+<code>
+x = -5:0.1:5;
+y = sin(x);
+plot(x, y)
+title('Sine Function')
+xlabel('X-axis')
+ylabel('Y-axis')
+</code>
+</pre>
+<h3>4. Saving Plots:</h3>
+<ul>
+  <li>Explain what saving plots is and why it is important in MATLAB.</li>
+  <li>Demonstrate how to save plots using MATLAB functions such as saveas().</li>
+  <li>Provide code examples of saving plots:</li>
+</ul>
+<pre>
+<code>
+x = -5:0.1:5;
+y = sin(x);
+plot(x, y)
+saveas(gcf, 'sine_plot.png')
+</code>
+</pre>
